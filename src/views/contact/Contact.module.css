@@ -1,0 +1,59 @@
+.headerText {
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Raleway';
+	
+	
+	margin-bottom: 0;
+}
+.headerText span {
+    background: #1d3856;
+	background: -webkit-linear-gradient(to right, #1d3856 0%, #1572a2 100%);
+	background: -moz-linear-gradient(to right, #1d3856 0%, #1572a2 100%);
+    background: linear-gradient(to right, #1d3856 0%, #1572a2 100%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.subtitleText {
+    font-size: 21px;
+    font-family: 'Titillium Web';
+    color: grey;
+    text-align: center;
+}
+.formWrapper {
+    max-width: 450px;
+    margin: 0 auto;
+}
+.button {
+    margin-top: 8px;
+    width: 100%;
+    background-color: #1573a2;
+    border-color: #1572a2;
+    margin-bottom: 24px;
+}
+.button:hover, .button:focus, .button:active {
+    background-color: #105a80 !important;
+    border-color: #105a80 !important;
+}
+.button:focus {
+    box-shadow: 0 0 0 0.2rem #1573a265 !important;
+}
+
+@media screen and (max-width: 991px) {
+	.headerText {
+		font-size: 36px;
+    }
+    .subtitleText {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .headerText {
+        font-size: 30px;
+    }
+    .subtitleText {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,13 @@
+.wizardElement {
+    padding: 4% 10%;
+}
+@media screen and (max-width: 767px) {
+    .wizardElement {
+        padding: 1.5rem 1rem;
+    }
+}
+@media screen and (max-width: 575px) {
+    .wizardElement {
+        padding: 1rem 0%;
+    }
+}

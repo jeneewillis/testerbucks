@@ -1,0 +1,18 @@
+.navbarWrapper {
+    padding: 27px 0 20px;
+}
+.navbarWrapper img {
+    width: 210px;
+}
+
+@media screen and (max-width: 767px) {
+    .navbarWrapper {
+        display: flex;
+        justify-content: center;
+        padding: 15px 0 0;
+    }
+    .navbarWrapper img {
+        height: 50px;
+        width: auto;
+    }
+}

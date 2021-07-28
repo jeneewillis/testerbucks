@@ -1,0 +1,65 @@
+.wrapper {
+	position: relative;
+	display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+.hLine {
+	background: #757575;
+	margin: 0;
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 50%;
+}
+.stepItem {
+	position: relative;
+	z-index: 11;
+	height: 32px;
+	width: 32px;
+	background: white;
+	border-radius: 50%;
+	border: 1px solid #757575;
+	box-shadow: 0 0 0 14px #213c5800, 0 0 0 7px #ffffff;
+	transition: 0.4s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.stepItem.active {
+	background: #213c58;
+	border-color: #213c58;
+	box-shadow: 0 0 0 14px #223b5934, 0 0 0 7px #213c5833;
+}
+.stepItem.passed {
+	background: #757575;
+}
+.stepIcon {
+	color: white;
+	font-family: 'Poppins';
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stepIcon img {
+    width: 100%;
+}
+
+@media screen and (max-width: 575px) {
+    .stepItem {
+        height: 21px;
+        width: 21px;
+        box-shadow: 0 0 0 5px #ffffff;
+    }
+    .stepItem.active {
+        box-shadow: 0 0 0 5px #213c5833;
+    }
+    .stepItem .stepIcon {
+        font-size: 13px;
+    }
+    .stepIcon img {
+        width: 70%;
+    }
+}

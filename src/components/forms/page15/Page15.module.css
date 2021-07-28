@@ -1,0 +1,224 @@
+.headerText {
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Raleway';
+	margin-bottom: 1rem;
+    line-height: 1.2;
+    margin-top: 2rem;
+}
+.headerText span {
+    background: #1d3856;
+	background: -webkit-linear-gradient(to right, #1d3856 0%, #1572a2 100%);
+	background: -moz-linear-gradient(to right, #1d3856 0%, #1572a2 100%);
+    background: linear-gradient(to right, #1d3856 0%, #1572a2 100%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.inputBox {
+	position: relative;
+	padding: 0 4%;
+	border: 1px solid #bbc4cc;
+	transition: 0.2s;
+	border-radius: 4px;
+    margin-top: 1rem;
+}
+.errMsg {
+    color: #dc3545;
+    line-height: 1;
+}
+.inputBox input {
+	color: #333333;
+	font-family: 'Raleway';
+	font-size: 15px;
+	height: 56px;
+	background: none;
+	border: none;
+	font-weight: bold;
+	width: 100%;
+}
+.inputBox input::placeholder {
+	color: #4d515e;
+	font-weight: 300;
+}
+.inputLabel {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 3%;
+	font-size: 16px;
+	padding: 0 6px;
+	background-color: white;
+	transform: translateY(-65%);
+	line-height: 1;
+	color: #4d515e;
+	transition: 0.2s;
+}
+.hasValue .inputLabel {
+	display: block;
+}
+.inputBox:focus-within {
+	border-color: #1573a2;
+}
+.inputBox:focus-within .inputLabel {
+	color: #1573a2;
+}
+
+.inputBox.isError {
+	border-color: #dc3545;
+}
+.inputBox.isError .inputLabel {
+	color: #dc3545;
+}
+.lightText {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+	font-family: 'Poppins';
+	font-size: 14px;
+	color: #787a80;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.agreeCheck {
+    width: 120px;
+    height: 27px;
+}
+.lightText.isError p {
+    color: #dc3545;
+}
+.tcpaP {
+    margin-left: -13px;
+    text-indent: 24px;
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+.btnWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 453px;
+    height: 66px;
+    background: rgb(21,114,162);
+    background: linear-gradient(0deg, rgba(21,114,162,1) 0%, rgba(47,129,172,1) 100%);
+    border: 7px solid #1572a2;
+    border-radius: 100px;
+    font-size: 23px;
+    font-family: 'Titillium Web';
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+.button:active, .button:hover, .button:focus, button[disabled] {
+    background: linear-gradient(0deg, rgba(47,129,172,1) 0%, rgba(21,114,162,1) 100%);
+    border-color: #1572a2 !important;
+}
+.responsiveOrder {
+    display: flex;
+    flex-direction: column;
+}
+.backBtnWrapper {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #606675;
+    font-family: 'Raleway';
+}
+.backBtn {
+    cursor: pointer;
+    user-select: none;
+    transition: .1s;
+}
+.backBtn:hover {
+    color: #444444;
+}
+@media screen and (max-width: 1199px) {
+    .agreeCheck {
+        width: 132px;
+    }
+}
+@media screen and (max-width: 991px) {
+	.headerText {
+		font-size: 36px;
+    }
+    .agreeCheck {
+        width: 180px;
+    }
+    .button {
+        width: 360px;
+        height: 60px;
+        font-size: 21px;
+    }
+    .backBtnWrapper {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .agreeCheck {
+        width: 170px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .headerText {
+        font-size: 30px;
+    }
+    .lightText {
+        line-height: 1.4;
+        font-size: 13px;
+        text-align: justify;
+        margin-top: 12px;
+    }
+    .agreeCheck {
+        width: 42%;
+        height: 20px;
+    }
+    .inputBox {
+        margin-top: 1.3rem;
+    }
+    .inputBox input {
+        height: 45px;
+        font-size: 14px;
+    }
+    .inputBox .inputLabel {
+        font-size: 14px;
+    }
+    .button {
+        font-size: 16px;
+        height: 45px;
+        width: 100%;
+    }
+    .responsiveOrder {
+        flex-direction: column-reverse;
+    }
+    .btnWrapper {
+        margin-top: 2rem;
+    }
+    .backBtnWrapper {
+        font-size: 13px;
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width: 459px) {
+    .agreeCheck {
+        width: 80%;
+        height: 21px;
+    }
+}
+@media screen and (max-width: 379px) {
+    .agreeCheck {
+        width: 92%;
+    }
+}
+@media screen and (max-width: 359px) {
+    .agreeCheck {
+        width: 99%;
+    }
+}

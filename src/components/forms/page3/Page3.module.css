@@ -1,0 +1,122 @@
+.headerText {
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Raleway';
+	line-height: 1.2;
+	margin-bottom: 1rem;
+    margin-top: 2rem;
+	
+}
+.headerText span {
+    background: #1d3856;
+	background: -webkit-linear-gradient(to right, #1d3856 0%, #1572a2 100%);
+	background: -moz-linear-gradient(to right, #1d3856 0%, #1572a2 100%);
+    background: linear-gradient(to right, #1d3856 0%, #1572a2 100%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.optionWrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.optionItem {
+	border: 1px solid #c6cdd5;
+	border-radius: 4px;
+	width: 19%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0.5rem 0;
+	height: 116px;
+	user-select: none;
+	cursor: pointer;
+	transition: 0.2s;
+}
+.optionLabel img {
+	max-height: 27px;
+	margin: 0 5px 2px;
+}
+.optionLabel {
+	font-family: 'Titillium Web';
+}
+.flexWrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.select {
+	width: 43%;
+	height: 57px;
+}
+.dtHide {
+	display: none;
+}
+.optionItem img {
+	max-height: 80px;
+	width: auto;
+	max-width: 90%;
+}
+.optionItem.active {
+    border-color: #1c94d5;
+    box-shadow: 3px 3px 18px 0px rgba(0, 0, 0, 0.1);
+    color: #1c94d5;
+}
+.optionItem:hover {
+    box-shadow: 3px 3px 18px 0px rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 768px) {
+    .optionItem:hover {
+        border-color: #1c94d5;
+        box-shadow: 3px 3px 18px 0px rgba(0, 0, 0, 0.1);
+        color: #1c94d5;
+    }
+}
+
+@media screen and (max-width: 991px) {
+	.headerText {
+		font-size: 36px;
+	}
+	.optionItem {
+		height: 94px;
+	}
+	.select {
+		height: 48px;
+		font-size: 15px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.select {
+		width: 100%;
+	}
+	.optionItem {
+		width: 48%;
+		height: 100px;
+	}
+}
+@media screen and (max-width: 575px) {
+	.headerText {
+		font-size: 30px;
+	}
+	.optionItem {
+		width: 100%;
+		height: 45px;
+		justify-content: flex-start;
+		padding: 0 2%;
+	}
+	.optionItem img {
+		margin-right: 3%;
+		max-height: 90%;
+	}
+	.optionItem .itemLabel {
+		font-family: 'Titillium Web';
+	}
+	.dtHide {
+		display: flex;
+	}
+	.mbHide {
+		display: none;
+	}
+}

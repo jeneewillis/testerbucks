@@ -1,0 +1,67 @@
+.appWrapper {
+	min-height: 100vh;
+	background-image: url(./media/image/appBg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+    position: relative;
+    padding-bottom: 110px;
+}
+.appContainer {
+    position: relative;
+    padding: 24px;
+    margin-top: 20px;
+}
+.mainContainer {
+	border-radius: 10px;
+	background: #ffffff;
+	box-shadow: 6px 6px 35px 0px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    z-index: 30;
+    position: relative;
+}
+.outerLine1 {
+	border-width: 1px 0px 1px 1px;
+    border-color: rgb(21, 114, 162);
+    border-radius: 10px 0 0 10px;
+	border-style: solid;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+    height: 300px;
+    z-index: 0;
+}
+.outerLine2 {
+    border-width: 0px 1px 1px 0px;
+	border-color: rgb(21, 114, 162);
+    border-radius: 0 0 10px 0;
+	border-style: solid;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 50%;
+	height: calc(100% - 300px);
+}
+
+@media screen and (max-width: 767px) {
+    .appContainer {
+        padding: 12px;
+	}
+	.outerLine1 {
+		height: 200px;
+	}
+	.outerLine2 {
+		height: calc(100% - 200px);
+	}
+}
+@media screen and (max-width: 575px) {
+	.appContainer {
+		padding: 0;
+	}
+	.outerLine1, .outerLine2 {
+		display: none;
+	}
+	.siteContainer {
+		padding: 0;
+	}
+}
